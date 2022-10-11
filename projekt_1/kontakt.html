@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="stylstranka.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+
+    <nav id="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">SDH Jamnice</a></h1>
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="onas.html">O nás</a></li>
+                <li><a class="current" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section id="contact-form" class="py-3">
+    <div class="container">
+        <h2 class="l-heading"><spen class="text-primary">Napiste</spen> nám</h2>
+        <p>Prosím vyplnte nám uvedený formulář</p>
+        <form>
+            <div class="form-group">
+                <lable for="name">Jméno</lable>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group">
+                <lable for="email">Email</lable>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <lable for="mesage">Zpráva</lable>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <button class="odeslat" type="submit">Odeslat</button>
+        </form>
+
+
+    </div>
+
+</section>
+
+<section id="features">
+  <div class="box">
+      <i class="fa-solid fa-building fa-3x"></i>
+      <h3>Hasičská Stanice</h3>
+  <p>Jamnice 70, 746 01 </p>
+        </div>
+  <div class="box bg-primary">
+      <i class="fa-solid fa-phone fa-3x"></i>
+            <h3>Telefoní číslo</h3>
+            <p>(+420) 747 745 745</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <h3>E-mail</h3>
+            <p>D20331@oaopava.cz</p>
+        </div>
+</section>
+<div class="clr"></div>
+
+<footer id="main-footer" class="bg-dark">
+    <p>SDH Jamnice &copy; 2022</p>
+</footer>
+</body>
+</html>
