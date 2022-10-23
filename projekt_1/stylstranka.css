@@ -38,6 +38,10 @@ h1, h2, h3 {
 p {
     margin: 10px 0  10px 0;
 }
+#p-mobil{
+    margin: 10px 0  10px 0;
+    color:black
+}
 .bg-primary{
     background-color: orange;
 }
