@@ -1,0 +1,70 @@
+
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #eee;
+    font-family: 'Indie Flower', cursive;
+}
+#1h{
+    text-align: center;
+}
+#logo{
+    font-size: large;
+    font-weight: bold;
+}
+.text-primary{
+    color: red;
+}
+p{
+    margin: 0.75rem 0;
+}
+#navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    position: -webkit-sticky;
+    top:0;
+}
+s
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover{
+   background-color: red;
+    border-radius: 4px;
+}
+#navbar{
+    position: sticky;
+
+}
+#showcase .uvod_horek{
+    background-image: url("");
+    weight: 20px;
+}
+
+
+
