@@ -1,13 +1,13 @@
 
 *{
     box-sizing: border-box;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
 body{
     background-color: #eee;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 #1h{
     text-align: center;
@@ -42,7 +42,7 @@ a {
     align-items: center;
     position: static;
     position: -webkit-sticky;
-    top:0;
+    margin:0;
 }
 #navbar ul{
     display: flex;
@@ -99,7 +99,9 @@ a {
 .lead{
     font-size: 1.3rem;
     margin-bottom: 2rem;
+    color:orange;
 }
+
 .btn{
     display: inline-block;
     color: #fff;
