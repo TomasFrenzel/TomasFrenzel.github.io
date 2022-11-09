@@ -19,8 +19,19 @@ body{
 .text-primary{
     color: red;
 }
+
+.text-center{
+    text-align: center;
+}
 p{
     margin: 0.75rem 0;
+}
+.py-1{padding: 1.5rem;}
+.py-2{padding: 2.5rem;}
+.py-3{padding: 3.5rem;}
+
+a {
+
 }
 #navbar {
     background: #333;
@@ -33,7 +44,6 @@ p{
     position: -webkit-sticky;
     top:0;
 }
-s
 #navbar ul{
     display: flex;
     list-style: none;
@@ -61,10 +71,93 @@ s
     position: sticky;
 
 }
-#showcase .uvod_horek{
-    background-image: url("");
-    weight: 20px;
+#showcase {
+    background: url("../img/uvodniStrana.jpeg");
+    height: 80vh;
+    width: 100%;
+
+}
+#showcase .showcase-content{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 2rem;
+
 }
 
+#showcase .showcase-content .l-heading{
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    letter-spacing: 1rem;
 
+}
+.lead{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    background-color: red;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: red;
+}
+.secours{
 
+}
+<!---->
+.box{
+    display: flex;
+    text-align:center ;
+}
+.box i{
+   display: flex;
+    text-align: center;
+}
+.container{
+    width: 1100px;
+    background-color: darkseagreen;
+    margin: auto;
+    padding: 0 2rem;
+}
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+
+}
+/*o nas*/
+#about .items{
+    display: flex;
+    padding: 1rem;
+}
+#about .item{
+    text-align:  center;
+    padding: 1rem;
+}
+#about .items .item i{
+    background: red;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+
+}
+/* Footer*/
+#main-footer{
+    text-align: center;
+    padding: 20px;
+}
