@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 
 body{
     background-color: #eee;
@@ -23,26 +26,32 @@ body{
 .text-center{
     text-align: center;
 }
-p{
-    margin: 0.75rem 0;
-}
-.py-1{padding: 1.5rem;}
-.py-2{padding: 2.5rem;}
-.py-3{padding: 3.5rem;}
 
-a {
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2.5rem 0;}
+.py-3{padding: 3.5rem 0;}
 
-}
+.p-1{padding: 1.5rem;}
+.p-2{padding: 2.5rem;}
+.p-3{padding: 3.5rem;}
+
+.m-1{margin: 1.5rem;}
+.m-2{margin: 2.5rem;}
+.m-3{margin: 3.5rem;}
+
 #navbar {
     background: #333;
     color: #fff;
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: static;
+    position: sticky;
+    top: 0;
     position: -webkit-sticky;
     margin:0;
+    z-index: 2;
 }
 #navbar ul{
     display: flex;
@@ -72,8 +81,8 @@ a {
 
 }
 #showcase {
-    background: url("../img/uvodniStrana.jpeg");
-    height: 80vh;
+    background: url("../img/uvodniStrana.jpeg") no-repeat center center/cover;
+    height: 100vh;
     width: 100%;
 
 }
@@ -82,7 +91,7 @@ a {
     flex-direction: column;
     height: 100%;
     text-align: center;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding:0 2rem;
 
@@ -99,12 +108,12 @@ a {
 .lead{
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    color:orange;
+    color: white;
 }
 
 .btn{
     display: inline-block;
-    color: #fff;
+    color: black;
     background-color: red;
     padding: 0.5rem 2rem;
     border: none;
@@ -127,7 +136,6 @@ a {
 }
 .container{
     width: 1100px;
-    background-color: darkseagreen;
     margin: auto;
     padding: 0 2rem;
 }
@@ -140,6 +148,8 @@ a {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    text-align: center;
+
 
 }
 /*o nas*/
@@ -150,14 +160,81 @@ a {
 #about .item{
     text-align:  center;
     padding: 1rem;
+    flex: 1;
 }
 #about .items .item i{
     background: red;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 50%;
+}
+/*seznam*/
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background-color: #333333;
+    color:#fff;
+}
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #aaa dotted 1px;
+}
+#projekt{
+    display: flex;
+}
+#projekt div{
+    flex:1;
+}
+#projekt .projet-img{
+    background: url("https://source.unsplash.com/random/?fire") center;
+}
+
+/* Obrázky */
+#images .items{
+    display:flex;
+    justify-content: space-between
+}
+#images .items img{
+    display: block;
+    margin: auto;
+    width: 80%
+}
+/* dotazník */
+#contact {
+    display:flex;
 
 }
+#contact div{
+    flex: 1;
+
+}
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+
+}
+#contact .contact-form label{
+    display:block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width:100%;
+    padding: 0.4rem;
+}
+.m-head{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    text-align: center;
+    background-color: red;
+
+}
+
 /* Footer*/
 #main-footer{
     text-align: center;

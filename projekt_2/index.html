@@ -26,10 +26,10 @@
     <div id="logo"><a href="index.html"><span class="text-primary"><i class="fa-solid fa-fire-flame-curved"> </i></span>SDH
         Jamnice</a></div>
     <ul>
-        <li><a href="#home">Uvod</a></li>
-        <li><a href="#about">o hře</a></li>
-        <li><a href="#projekt">Ppojekt</a></li>
-        <li><a href="#contact">Kontact</a></li>
+        <li><a href="#home">Úvod</a></li>
+        <li><a href="#about">O hře</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#contact">Kontakt</a></li>
     </ul>
 </nav>
 <div id="showcase">
@@ -52,7 +52,7 @@
         <h2 class="m-heading text-center"><span class="text-primary">Naše</span> výhody</h2>
         <div class="items">
             <div class="item">
-                <i class="fa-solid fa-users fa-3x"></i>
+                <i class="fa-solid fa-group-arrows-rotate fa-3x"></i>
                 <div>
                     <h3>Skvělá komunita</h3>
                     <p>Máme nejlepší trenery. Naši trenéři jsou rokama </p>
@@ -67,12 +67,173 @@
                 </div>
             </div>
             <div class="item">
-                <i class="fa-solid fa-users fa-3x"></i>
+                <i class="fa-solid fa-fire-extinguisher fa-3x"></i>
                 <div>
                     <h3>Špičkové vybavení</h3>
                     <p>Trenujeme s nejmodernějším vybavením.</p>
                 </div>
             </div>
- </section>
+        </div>
+    </div>
+</section>
+<section id="projekt">
+    <div class="projet-img"></div>
+    <div class="projetk-text bg-dark p-2">
+        <h2 class="m-heading">Projektový team</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eius error explicabo laborum molestiae officia possimus, sit? Ab amet asperiores eaque eius nihil omnis quia veritatis. Dolores molestias neque porro?</p>
+        <h2><span class="text-primary">Seznam</span></h2>
+        <ul class="list">
+            <li>položka 1</li>
+            <li>položka 2</li>
+            <li>položka 3</li>
+        </ul>
+    </div>
+</section>
+
+<section id="images" class="py-2">
+    <div class="container">
+        <h2 class="m-heading">Ilustrační <span class="text-primary">obrázky</span></h2>
+        <div class="items py-1" >
+            <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="ekonomy"></div>
+            <div> <img src=https://source.unsplash.com/random/180x300/?fire" alt="ohen"></div>
+            <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="voda"></div>
+            <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="voda"></div>
+            <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="voda"></div>
+            
+        </div>
+    </div>
+
+</section>
+<section id="contact">
+    <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Napište nám</h2>
+        <p>prosím využijte níže uvedený formulář</p>
+        <form>
+            <div class="form-group">
+            <label for="name">Jméno: </label>
+            <input type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Jméno a příjmení">
+            </div>
+
+            <div class="form-group">
+            <label for="email">E-mail: </label>
+            <input type="text"
+                   name="email"
+                   id="email"
+                   placeholder="E-mail">
+            </div>
+                 <div class="form-group">
+                <label for="phone">Telefon: </label>
+                <input type="text"
+                   name="phone"
+                   id="phone"
+                   placeholder="telefon">
+            </div>
+            <div class="form-group">
+                <label for="mesage">Zpráva: </label>
+                <textarea name="mesage"
+                      id="mesage"
+                      cols="30"
+                      rows="10"
+                      placeholder="zpráva">
+                </textarea>
+                <input type="submit" class="btn btn-dark"
+                        value="Odeslat">
+
+            </div>
+        </form>
+    </div>
+
+<div class="contact-adress bg-dark p-2">
+    <h2 class="m-heading">Kontakt</h2>
+    <h3>Adresa hasičárny</h3>
+    <ul class="list">
+        <li>Jamnice 72</li>
+        <li>PČS: 746 01</li>
+    </ul>
+    <h3>Email</h3>
+    <ul class="list">
+        <li>sdhJamnice@gmail.com</li>
+    </ul>
+    <h3>Telefon</h3>
+    <ul class="list">
+        <li>745 451 745</li>
+    </ul>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="main-footer" class="bg-dark">
+    <p>SDH Jamnice &copy; 2022</p>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    // Smooth scrolling
+    $('#navbar a, .btn').on('click', function (event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100
+                }, 800
+            )
+        }
+    })
+
+
+    var nav_sections = $('section');
+    var main_nav = $('#navbar li, .mobile-nav');
+
+    $(window).on('scroll', function() {
+
+        var cur_pos = $(this).scrollTop() + 200;
+
+        // Menu Opacity on scrolling and hidding source
+
+        if (cur_pos > 350) {
+            document.querySelector('#navbar').style.opacity = 0.9;
+            document.querySelector('#showcase .source').style.display = "none";
+        }
+        else {
+            document.querySelector('#navbar').style.opacity = 1;
+            document.querySelector('#showcase .source').style.display = "block";
+        }
+
+        // Navigation active state on scroll
+
+        nav_sections.each(function() {
+            var top = $(this).offset().top,
+                bottom = top + $(this).outerHeight();
+
+            if (cur_pos >= top && cur_pos <= bottom) {
+                if (cur_pos <= bottom) {
+                    main_nav.find('a').removeClass('active');
+                }
+                main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+
+            if (cur_pos < 300) {
+                $("#navbar ul li a").removeClass('active');
+            }
+        });
+    });
+</script>
 </body>
 </html>
