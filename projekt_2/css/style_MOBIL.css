@@ -1,0 +1,146 @@
+/* Mobil <500px */
+#navbar{
+    position: sticky;
+}
+
+#about .items{
+    display: block;
+    padding: 1rem;
+}
+#about .items .item{
+    display: flex;
+    text-align: left;
+}
+#about .items .item i{
+    align-self: center;
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+}
+/* Smartpohe */
+
+@media screen and (max-width: 500px){
+    /* #navbar */
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+        /* display: none; */
+    }
+    #navbar #hambac{
+        display: block;
+    }
+    #navbar ul{
+        flex-direction: column;
+    }
+    #navbar ul li{
+        padding: 0.5rem;
+        border-bottom: #f4f4f4 1px dotted;
+    }
+    #navbar ul li:first-child{
+        margin-top: 0.8rem;
+        border-top: #f4f4f4 1px dotted;
+    }
+
+
+
+
+    #navbar #logo{
+        margin-bottom: 1.3rem;
+        text-align: center;
+    }
+    .l-heading{
+        letter-spacing: 0;
+        font-size: 3rem;
+    }
+    /* Showcase */
+    #showcase .showcase-content{
+
+    }
+    /* #projekt */
+    #projekt{
+        display: block;
+        padding: 1.5rem;
+    }
+    #projekt .m-heading{
+        margin-bottom: 2rem;
+    }
+    /*#about*/
+    #about .m-heading{
+        display: flex;
+    }
+    #about{
+        display: flex;
+    }
+    /*#images*/
+    #images{
+        display: none;
+    }
+   #images .m-heading{
+        display: flex;
+    }
+
+    #images .items div{
+        display: none;
+        padding: 0;
+
+    }
+    #images .items img{
+    }
+
+    /*#contact*/
+    #contact{
+        flex-direction: column;
+    }
+    #main-footer.bg-dark{
+        display: flex;
+        text-align: center;
+    }
+    #main-footer{
+        text-align: center;
+        padding: 20px;
+        display: flex;
+    }
+}
+
+
+
+
+@media screen and (max-height: 568px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    #navbar ul{
+        flex-direction: column;
+    }
+
+    /**/
+    #navbar ul li{
+        padding: 0.5rem;
+        border-bottom: #f4f4f4 1px dotted;
+    }
+    #navbar ul li:first-child{
+        margin-top: 0.8rem;
+        border-top: #f4f4f4 1px dotted;
+    }
+
+
+    .l-heading{
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+    #navbar{
+        align-items: flex-start;
+    }
+    #navbar ul{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #main-footer{
+        text-align: center;
+        padding: 20px;
+        display: flex;
+    }
+}

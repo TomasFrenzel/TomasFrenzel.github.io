@@ -53,6 +53,9 @@ body{
     margin:0;
     z-index: 2;
 }
+#navbar #hambac{
+    display: none;
+}
 #navbar ul{
     display: flex;
     list-style: none;
@@ -79,6 +82,9 @@ body{
 #navbar{
     position: sticky;
 
+}
+#navbar #hambac{
+    display: none;
 }
 #showcase {
     background: url("../img/uvodniStrana.jpeg") no-repeat center center/cover;
@@ -191,7 +197,7 @@ body{
 #projekt div{
     flex:1;
 }
-#projekt .projet-img{
+#projekt .project-img{
     background: url("https://source.unsplash.com/random/?fire") center;
 }
 
@@ -201,7 +207,6 @@ body{
     justify-content: space-between
 }
 #images .items img{
-    display: block;
     margin: auto;
     width: 80%
 }
@@ -239,4 +244,5 @@ body{
 #main-footer{
     text-align: center;
     padding: 20px;
+    display: flex;
 }

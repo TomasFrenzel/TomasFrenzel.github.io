@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hasiči">
-    <meta name="keywords" contect="firesport, Jamnice, hasiči">
+    <meta name="keywords"
+          content="firesport, Jamnice, hasiči">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet"
           href="./css/style.css">
+    <link rel="stylesheet"
+          href="./css/style_FHD.css" media="screen and (min-width: 1100px)">
+    <link rel="stylesheet"
+          href="./css/style_MOBIL.css" media="screen and (max-width: 768px)">
     <title>SDH Jamnice</title>
 </head>
 
@@ -25,6 +30,7 @@
 <nav id="navbar">
     <div id="logo"><a href="index.html"><span class="text-primary"><i class="fa-solid fa-fire-flame-curved"> </i></span>SDH
         Jamnice</a></div>
+    <a id="hambac" href="#"> <i class="fa fa-bars fa-2x"></i></a>
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">O hře</a></li>
@@ -35,7 +41,7 @@
 <div id="showcase">
     <div class="showcase-content">
         <h1 class="l-heading">SDH Jamnice</h1>
-        <p class="lead" class="text-jina-barva">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus dignissimos
+        <p class="lead text-jina-barva">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus dignissimos
             dolorem doloremque fugiat impedit iusto modi obcaecati, quasi tenetur! Error in molestiae necessitatibus,
             nostrum nulla omnis quia quo rem?</p>
         <a href="#about"
@@ -93,13 +99,12 @@
 <section id="images" class="py-2">
     <div class="container">
         <h2 class="m-heading">Ilustrační <span class="text-primary">obrázky</span></h2>
-        <div class="items py-1" >
-            <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="ekonomy"></div>
+        <div class="items " >
             <div> <img src=https://source.unsplash.com/random/180x300/?fire" alt="ohen"></div>
             <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="voda"></div>
             <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="voda"></div>
             <div> <img src="https://source.unsplash.com/random/180x300/?fire" alt="voda"></div>
-            
+
         </div>
     </div>
 
@@ -162,17 +167,7 @@
         <li>745 451 745</li>
     </ul>
 </div>
-
 </section>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -182,7 +177,7 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
@@ -209,11 +204,11 @@
 
         if (cur_pos > 350) {
             document.querySelector('#navbar').style.opacity = 0.9;
-            document.querySelector('#showcase .source').style.display = "none";
+            //document.querySelector('#showcase .source').style.display = "none";
         }
         else {
             document.querySelector('#navbar').style.opacity = 1;
-            document.querySelector('#showcase .source').style.display = "block";
+            //document.querySelector('#showcase .source').style.display = "block";
         }
 
         // Navigation active state on scroll
@@ -233,7 +228,7 @@
                 $("#navbar ul li a").removeClass('active');
             }
         });
-    });
-</script>
+    });</script>
+<script src="./js/script.js"></script>
 </body>
 </html>
