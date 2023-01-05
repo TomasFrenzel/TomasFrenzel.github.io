@@ -1,0 +1,58 @@
+#title {
+    font-size: 24px;
+    color: blue;
+}
+
+
+
+#description {
+    font-size: 18px;
+    color: gray;
+}
+
+
+
+#survey-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+
+
+#name, #email, #number, #dropdown, #comments {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+
+
+#submit {
+    width: 100%;
+    background-color: greenyellow;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+#submit:hover {
+    background-color: green;
+}
+
+
+
+label {
+    font-size: 16px;
+    color: gray;
+}
