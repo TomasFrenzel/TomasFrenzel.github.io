@@ -1,0 +1,155 @@
+:root{
+    --primary-color: #425b84;
+    --secondery-color: #5b7bb4;
+    --max-width:1100px
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1rem/1.5 "aril", sans-serif;
+    background-color: var(--primary-color);
+    color: #fff;
+    overflow-x: hidden;
+    padding-bottom:50px;
+}
+
+#main_header{
+    background-color: var(--secondery-color);
+    padding: 4rem;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+/*boxs andtečky */
+
+/* pravá strana */
+#timle_line ul li:nth-child(odd) div{
+    left:40px;
+}
+#timle_line ul li:nth-child(ever) div{
+    left: -434px;
+}
+
+/*tečky*/
+#timle_line ul li::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: var(--secondery-color);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: background 0.5s ease-in-out;
+}
+
+/*šipky + základna*/
+#timle_line ul li div::before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/*pravá sttrana*/
+#timle_line ul li:nth-child(odd) div::before{
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    /*border-width: 8px 8px 8px 8px;*/
+    border-color: transparent var(--secondery-color);
+}
+ /* levá strana */
+#timle_line ul li:nth-child(even) div::before{
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    /*border-width: 8px 8px 8px 8px;*/
+    border-color: transparent transparent transparent var(--secondery-color);
+}
+
+/* responsibilita */
+@media(max-width: 900px){
+    #timle_line ul li div{
+        width: 250px;
+    }
+    #timle_line ul li:nth-child(even) div{
+        left: -284px;
+    }
+}
+
+@media(max-width: 600px) {
+    #timle_line ul li{
+        margin-left: 20px;
+    }
+    #timle_line ul li div{
+        width: calc(100vw - 90px);
+    }
+    #timle_line ul li:nth-child(even) div{
+        left:40px;
+    }
+    #timle_line ul li:nth-child(even) div::before{
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondery-color);
+    }
+}
+/*boxes*/
+#timle_line ul li div{
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 1rem;
+    background: var(--secondery-color);
+    transition: all 0.5s ease-in-out;
+
+    visibility: hidden;
+    opacity: 0;
+}#time_line ul li.show div{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+ }
+
+ /* pravá strana */
+#timle_line ul li:nth-child(odd) div{
+    left: 40px;
+    transform: translate(200px, 0);
+}
+
+/* levá strana */
+#timle_lineul ul li:nth-child(even) div{
+    left: -434px;
+    transform: translate(-200px, 0);
+}
+
+/* zmena teček*/
+#timle_line ul li::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: inherit;
+    transform: translateX(-50%);
+    border-radisu: 50px;
+    transition: background 0.5s ease-in-out;
+}
+
+#time_line ul li.show::after{
+    background-color:var(--secondery-color);
+}

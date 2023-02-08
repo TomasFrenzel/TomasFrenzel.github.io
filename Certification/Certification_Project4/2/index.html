@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+</head>
+
+
+<body>
+<header id="header">
+    <h1 class="tect_main">Taneční Hartman</h1>
+    <nav id="nav-bar">
+        <a class="nav-link" href="#about">O nás</a>
+        <a class="nav-link" href="#pricing">Lekce</a>
+        <a class="nav-link" href="#newsletter">Dotazník</a>
+    </nav>
+</header>
+<section id="about" >
+    <h1 class="heading-1 text-center">hello</h1>
+    <div class="products" >
+        <div class="product">
+            <h2 class="text-center text_dark">současnost</h2>
+            <p class="text_about text_dark">Jsme Taneční škola jak pro teenegery tak i pro dospělé nebo děti ve školních
+                letech. Nabízíme ten nejlepší přístup který může být.</p>
+            <div class="icons text_dark">
+                <div class="icon"><i class="fa-solid fa-stopwatch"></i>Reaction Time
+                </div>
+                <div class="icon"><i class="fa-solid fa-face-grin-stars"></i>Good Mood
+                </div>
+                <div class="icon"><i class="fa-solid fa-arrows-to-eye"></i>Focus
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <h2 class="text-center"> minulost</h2>
+            <p class="text_about">Jsme Taneční škola jak pro teenegery tak i pro dospělé nebo děti ve školních
+                letech. Nabízíme ten nejlepší přístup který může být.</p>
+
+            <div class="icons">
+                <div class="icon"><i class="fa-solid fa-chart-line"></i>Long-term health and performance</div>
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i>Immunity, vitality & body balance</div>
+                <div class="icon"><i class="fa-solid fa-heart-pulse"></i>0% caffeine, sugar & artificial junk
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe id="videa" src="https://www.youtube.com/watch?v=wE5XErUjeaI&ab_channel=Tane%C4%8Dn%C3%ADHartmann" allowfullscreen
+            frameborder="0"></iframe>
+</section>
+<section id="pricing">
+    <h1 class="heading-1 text-center">Kurzy</h1>
+    <div class="buy-products">
+        <div class="buy-product">
+            <h2 class="text-center">Začátečnické kurzy</h2>
+            <p class="text-center">Dvanáct lekcí, naučíme se tancovat základní tance jako je Valc, Valčík, Tango, Jive a spoustu dalšího. Kurzy obsahují půlkolonu a kolonu</p>
+            <p class="price">23,21 $</p>
+            <a href="#" class="button purple"><i class="fa-solid fa-cart-shopping"></i>Buy</a>
+        </div>
+        <div class="buy-product">
+            <h2 class="text-center">Pokročilé kurzy</h2>
+            <p class="text-center">Jedenáct lekcí, každá lekce je tamaticky jina. NAučíme se tančit poročilé tance. Kurz obsahuje i Kolonu</p>
+            <p class="price">21,41 $</p>
+            <a href="#" class="button orange"><i class="fa-solid fa-cart-shopping"></i>Buy</a>
+        </div>
+    </div>
+</section>
+<section id="newsletter">
+    <h1 class="heading-1">Napiš nám a zeptej se</h1>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" placeholder="Enter your email..." id="email" name="email" required>
+        <input type="submit" id="submit">
+    </form>
+</section>
+
+
+
+<footer id="footer">
+    <p>This website is inspired by &nbsp;<a href="https://www.madmonq.gg/cs/" target="_blank">Madmonq.gg</a></p>
+</footer>
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+</html>
