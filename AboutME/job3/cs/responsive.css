@@ -1,0 +1,208 @@
+@media screen and (max-width: 767px) {
+    .heading-1 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .heading-2 {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .heading-2-bigger {
+        text-align: center;
+    }
+
+    .sub-heading {
+        text-align: center;
+    }
+
+    #nav-bar {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 0.5rem;
+    }
+
+    #main-section {
+        padding: 3rem 0 0 0;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+
+    #main-text .heading-2 {
+        font-size: 1rem;
+        font-weight: 300;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    #main-description {
+        margin: 1rem;
+    }
+
+    #main-text .button {
+        margin: 0 1rem;
+        width: 90%;
+    }
+
+    #heading-photo {
+        width: 90%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    #photogallery {
+        margin: 0;
+    }
+
+    #photogallery-photos {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .photogallery-photo {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .company-photos {
+        flex-direction: column;
+    }
+
+    .company-photo {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .company-photos a:last-of-type {
+        width: 90%;
+        height: auto;
+    }
+
+    .company-photos a:last-of-type img {
+        width: 100%;
+        height: auto;
+    }
+
+    #actualities {
+        margin: 0;
+    }
+
+    .actualities-box-table {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    #actualities .heading-3 {
+        margin: 0 1rem;
+    }
+
+    #actualities .box-sub-heading {
+        margin: 0.5rem 1rem;
+    }
+
+    #courses {
+        margin: 0 1rem;
+    }
+
+    #courses .heading-2-bigger {
+        padding-top: 3rem;
+    }
+
+    #courses .courses-box {
+        width: 100%;
+    }
+
+    #courses .courses-box ul {
+        width: 100%;
+    }
+
+    #contact-section {
+        margin: 0 1rem;
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-section .contact-container {
+        margin: 0;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    #contact-section .contact-container .heading-2 {
+        padding: 0;
+    }
+
+    #contact-section .contact-container #contact-info {
+        padding: 1rem;
+    }
+
+    #contact-section .contact-container #contact-info .contact-row {
+        font-size: 0.8rem;
+    }
+
+    #contact-form {
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+
+    #contact-form .form-input,
+    #contact-form .form-textarea {
+        width: 100%;
+    }
+
+    #contact-form .button {
+        width: 100%;
+    }
+
+    .contact-container:nth-of-type(2) .heading-2 {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #main-section {
+        padding: 3rem 2rem;
+        grid-template-columns: 50% 45%;
+        column-gap: 5%;
+        align-items: center;
+    }
+
+    #heading-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .company-photos {
+        flex-direction: column;
+    }
+
+    .company-photos a {
+        padding: 2rem 0;
+    }
+
+    .actualities-box-table {
+        width: 90%;
+    }
+
+    .actualities-box-table ul {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #main-section {
+        grid-template-columns: 50% 40%;
+        column-gap: 5%;
+    }
+
+    .company-photos  {
+        width: 95%;
+    }
+}

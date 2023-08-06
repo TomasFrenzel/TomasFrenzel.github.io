@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>JSNS projekt | Praxe emaily</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img src=".//logo/logo.png" class="logo" alt="logo" />
+      <nav>
+        <a class="nav-link" href="index.html">Úvod</a>
+        <a class="nav-link" href="onas.html">O nás</a>
+        <a class="nav-link" href="pages.html">Seznam stránek</a>
+        <a class="nav-link" href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+    <section class="section test-section">
+      <h2 class="heading-2">
+        Test: <span class="primary-text">Podvodné emaily</span>
+      </h2>
+      <fieldset class="question-field" id="field-1">
+        <h3 class="heding-3">Otázka č.:1</h3>
+        <p class="question">
+          <img src=".//img-emaily/2131-scan-csob.jpg" alt="" />
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-1" id="true-1" value="true" />
+            <label for="true-1">Toto je pravý email</label>
+
+            <input type="radio" name="question-1" id="false-1" value="false" />
+            <label for="true-1">Toto je falešný email</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-1" class="bad-message-container">
+          Toto je falešný mail. Můžete si ho všimnout ve slově "overení", nebo
+          odkazem "klikni zde". Banky po Vás nikdy nechtějí přihlášení přes
+          odkaz.
+        </p>
+      </fieldset>
+      <fieldset class="question-field" id="field-2">
+        <h3 class="heding-3">Otázka č.:2</h3>
+        <p class="question">
+          <img src=".//img-emaily/Objednavka.jpg" alt="" />
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-2" id="true-2" value="true" />
+            <label for="true-1">Toto je pravdivý email</label>
+
+            <input type="radio" name="question-2" id="false-2" value="false" />
+            <label for="true-1">Toto je falešný email</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-2" class="bad-message-container">
+          Toto je falešný email nabádající k hovoru. Pokud máte vyřízenou
+          objednávku, společnosti nikomu nevolají. Volají jen tehdy, když jim
+          zavoláte sami.
+        </p>
+      </fieldset>
+      <fieldset class="question-field" id="field-3">
+        <h3 class="heding-3">Otázka č.:3</h3>
+        <p class="question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          nemo voluptatum dolores, voluptas sunt tenetur pariatur impedit
+          consectetur inventore, nobis eum nam adipisci perspiciatis officia.
+          Veniam omnis rem facere praesentium?
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-3" id="true-3" value="true" />
+            <label for="true-1">Toto je pravidvý email</label>
+
+            <input type="radio" name="question-3" id="false-3" value="false" />
+            <label for="true-1">Toto je falešný email</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-3" class="bad-message-container"></p>
+      </fieldset>
+      <fieldset class="question-field" id="field-4">
+        <h3 class="heding-3">Otázka č.:4</h3>
+        <p class="question">
+          <img src=".//img-emaily/phishing-mail.png" alt="" />
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-4" id="true-4" value="true" />
+            <label for="true-1">Toto je pravdivý email</label>
+
+            <input type="radio" name="question-4" id="false-4" value="false" />
+            <label for="true-1">Toto je falešný email</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-4" class="bad-message-container">
+          Toto je samozřejmě falešný email. Link odkazuje na falešný web.
+        </p>
+      </fieldset>
+      <fieldset class="question-field" id="field-5">
+        <h3 class="heding-3">Otázka č.:5</h3>
+        <p class="question">
+          <img src=".//img-emaily/Virus.png" alt="" />
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-5" id="true-5" value="true" />
+            <label for="true-1">Toto je pravdivý email</label>
+
+            <input type="radio" name="question-5" id="false-5" value="false" />
+            <label for="true-1">Toto je falešný email</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-5" class="bad-message-container">
+          Toto je samozřejmě falešný email. Jsou zde chyby v háčkách a čárkách,
+          a neregistrovaná doména v emailu.
+        </p>
+      </fieldset>
+      <!--<fieldset class="question-field" id="field-6">
+        <h3 class="heding-3">Otázka č.:6</h3>
+        <p class="question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          nemo voluptatum dolores, voluptas sunt tenetur pariatur impedit
+          consectetur inventore, nobis eum nam adipisci perspiciatis officia.
+          Veniam omnis rem facere praesentium?
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-6" id="true-6" value="true" />
+            <label for="true-1">Pravda</label>
+
+            <input type="radio" name="question-6" id="false-6" value="false" />
+            <label for="true-1">Nepravda</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-6" class="bad-message-container"></p>
+      </fieldset>
+      <fieldset class="question-field" id="field-7">
+        <h3 class="heding-3">Otázka č.:7</h3>
+        <p class="question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          nemo voluptatum dolores, voluptas sunt tenetur pariatur impedit
+          consectetur inventore, nobis eum nam adipisci perspiciatis officia.
+          Veniam omnis rem facere praesentium?
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-7" id="true-7" value="true" />
+            <label for="true-1">Pravda</label>
+
+            <input type="radio" name="question-7" id="false-7" value="false" />
+            <label for="true-1">Nepravda</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-7" class="bad-message-container"></p>
+      </fieldset>
+      <fieldset class="question-field" id="field-8">
+        <h3 class="heding-3">Otázka č.:8</h3>
+        <p class="question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          nemo voluptatum dolores, voluptas sunt tenetur pariatur impedit
+          consectetur inventore, nobis eum nam adipisci perspiciatis officia.
+          Veniam omnis rem facere praesentium?
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-8" id="true-8" value="true" />
+            <label for="true-1">Pravda</label>
+
+            <input type="radio" name="question-8" id="false-8" value="false" />
+            <label for="true-1">Nepravda</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-8" class="bad-message-container"></p>
+      </fieldset>
+      <fieldset class="question-field" id="field-9">
+        <h3 class="heding-3">Otázka č.:9</h3>
+        <p class="question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          nemo voluptatum dolores, voluptas sunt tenetur pariatur impedit
+          consectetur inventore, nobis eum nam adipisci perspiciatis officia.
+          Veniam omnis rem facere praesentium?
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-9" id="true-9" value="true" />
+            <label for="true-1">Pravda</label>
+
+            <input type="radio" name="question-9" id="false-9" value="false" />
+            <label for="true-1">Nepravda</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-9" class="bad-message-container"></p>
+      </fieldset>
+      <fieldset class="question-field" id="field-10">
+        <h3 class="heding-3">Otázka č.:10</h3>
+        <p class="question">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+          nemo voluptatum dolores, voluptas sunt tenetur pariatur impedit
+          consectetur inventore, nobis eum nam adipisci perspiciatis officia.
+          Veniam omnis rem facere praesentium?
+        </p>
+        <div class="answers">
+          <div class="answer">
+            <input type="radio" name="question-10" id="true-10" value="true" />
+            <label for="true-1">Pravda</label>
+
+            <input
+              type="radio"
+              name="question-10"
+              id="false-10"
+              value="false" />
+            <label for="true-1">Nepravda</label>
+          </div>
+        </div>
+        <p id="bad-answer-description-10" class="bad-message-container"></p>
+      </fieldset>-->
+      <button class="button" id="test-button">Vyhodnotit</button>
+    </section>
+    <footer>
+      <p>&copy;2023, Patrik Demel & Tomáš Frenzel</p>
+    </footer>
+
+    <script src="./js/emaily-test.js"></script>
+  </body>
+</html>

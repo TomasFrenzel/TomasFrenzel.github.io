@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>JSNS projekt | Kontakt</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img src=".//logo/logo.png" class="logo" alt="logo" />
+      <nav>
+        <a class="nav-link" href="index.html">Úvod</a>
+        <a class="nav-link" href="onas.html">O nás</a>
+        <a class="nav-link" href="pages.html">Seznam stránek</a>
+        <a class="nav-link" href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+    <section id="contact-section" class="section">
+      <div class="container">
+        <h2 class="heading-2">
+          Kontaktní <span class="primary-text">informace</span>
+        </h2>
+        <div class="contact-info-container">
+          <div class="contact-info-container-row">
+            <i class="fa-solid fa-user contact-icon"></i>
+            <p class="contact-info-text">Tomáš Frenzel</p>
+          </div>
+          <div class="contact-info-container-row">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <p class="contact-info-text">Bezpecne.Na.Netu@outlook.com</p>
+          </div>
+          <div class="contact-info-container-row">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <p class="contact-info-text">+420-732-682-624</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="heading-2">
+          Kontaktní <span class="primary-text">formulář</span>
+        </h2>
+        <form
+          action="https://formsubmit.co/Bezpecne.Na.Netu@outlook.com"
+          method="POST"
+          id="contact-form">
+          <label for="fullname" class="contact-label">Jméno a příjmení:</label>
+          <input
+            class="contact-input"
+            type="text"
+            name="name"
+            id="fullname"
+            required />
+          <label for="email" class="contact-label">Email:</label>
+          <input
+            class="contact-input"
+            type="email"
+            name="email"
+            id="email"
+            required />
+          <label for="fullname" class="contact-label">Zpráva:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="contact-textarea"></textarea>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://bezpecnena-na-netu.cekuj.net/thanks.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <button class="button contact-button" type="submit">Odeslat</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>&copy;2023, Patrik Demel & Tomáš Frenzel</p>
+    </footer>
+  </body>
+</html>

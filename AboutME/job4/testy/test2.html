@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samopsací text</title>
+  <script>
+    function napisSamopsaciText() {
+      var text = "Ahoj jmenuju se tonas nan rad kolo a taky hory.";
+      var index = 0;
+      var interval = setInterval(function() {
+        document.getElementById("samopsaciText").textContent += text[index];
+        index++;
+        if (index >= text.length) {
+          clearInterval(interval);
+          document.getElementById("dotaz").style.display = "block";
+        }
+      }, 100);
+    }
+
+    function zobrazDotaz() {
+      document.getElementById("dotaz").style.display = "block";
+    }
+
+    function odpoved(uzivatelovaOdpoved) {
+      var spravnaOdpoved = "Ano";
+      var zprava = "";
+
+      if (uzivatelovaOdpoved === spravnaOdpoved) {
+        zprava = "Správná odpověď!";
+      } else {
+        zprava = "Špatná odpověď!";
+      }
+
+      alert(zprava);
+    }
+  </script>
+  <style>
+    #dotaz {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="samopsaciText"></div>
+  <div id="dotaz">
+    <p>Je to pravda?</p>
+    <button onclick="odpoved('Ano')">Ano</button>
+    <button onclick="odpoved('Ne')">Ne</button>
+  </div>
+  <button onclick="napisSamopsaciText()">Spustit samopsací text</button>
+  <button onclick="zobrazDotaz()" id="dalšíText" style="display: none;">Další text</button>
+</body>
+</html>

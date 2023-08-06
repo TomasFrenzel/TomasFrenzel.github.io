@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./cs/style.css">
+    <link rel="stylesheet" href="./cs/responsive.css">
+    <title>Přihlášky | Taneční škola Hartmann - Opava, taneční kurzy Opava</title>
+</head>
+<body>
+<nav id="nav-bar">
+    <a href="index.html" class="nav-link">Úvod</a>
+    <a href="actualities.html" class="nav-link">Aktuality</a>
+    <a href="courses.html" class="nav-link">Kurzy</a>
+    <a href="applications.html" class="nav-link">Přihlášky</a>
+    <a href="contact.html" class="nav-link">Kontakt</a>
+</nav>
+<section>
+    <div class="contact-container">
+        <h2 class="heading-2">Kontaktní formulář</h2>
+        <form action="" id="applicition-form">
+            <label class="form-label" for="name-partner">Jméno a příjmení patrntera:</label>
+            <input class="form-input" type="text" name="name-partner" id="name-partner" required>
+            <label class="form-label" for="name-partnerka">Jméno a příjmení partnerky:</label>
+            <input class="form-input" type="text" name="name-partnerka" id="name-partnerka" required>
+            <label class="form-label" for="adresa">Adresa:</label>
+            <input class="form-input" type="text" name="adersa" id="adresa" required>
+            <label class="form-label" for="email">E-mail:</label>
+            <input class="form-input" type="email" required name="email" id="email">
+            <label class="form-label" for="mobil"> Tel. číslo:</label>
+            <input class="form-input" type="number" name="mobil" id="mobil" required>
+            <label>Typ kurzu:</label>
+
+            <select class="form-applition">
+                <option value="student">Základní kurzy pro studenty-Taneční Hartman s.r.o.</option>
+                <option value="student-pro">Taneční kurzy pro studenty POKROČILÉ</option>
+                <option value="manzele">Taneční kurzy pro manželské a partnerské páry ZÁKLADNÍ</option>
+                <option value="manzele-mirne">Taneční kurzy pro manželské a partnerské páry MÍRNĚPOKROČILÉ</option>
+                <option value="manezle-pro">Taneční kurzy pro manželské a partnerské páry POKROČÍLÉ</option>
+                <option value="manzele-pro-max">Taneční kurzy pro manželské a partnerské páry SUPERPOKROČÍLÉ</option>
+            </select>
+            <button type="submit" class="form-button button">Odeslat</button>
+        </form>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy;2022, Taneční škola Hartmann, Opava</p>
+</footer>
+</body>
+</html>

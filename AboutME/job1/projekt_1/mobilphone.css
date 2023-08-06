@@ -1,0 +1,107 @@
+.box{
+    float: none;
+    width:100px;
+}#contact-form .box{
+    border-botton: #dddddd dotted 1px;
+    }
+ #features .box{
+     border-button: #ddd dashed 1px;
+ }
+#homeinfo .info-img{
+    display: none;
+}
+#homeinfo .info-contact {
+    float: none;
+    width: 100%;
+}
+#navbar .logo{
+    float: none;
+    text-align: center
+    padding-botton: 15px;
+    }
+#navbar ul
+#navbar ul li{
+    float: none;
+}
+#navbar ul li a{
+    padding: 5px;
+    border-bottom: #dddddd dotted 1px;
+}
+#homeinfo .info-contact p{
+    margin: 0px 40px 0px 0px;
+    text-align: center;
+}
+/* Index.html*/
+#navbar .logo{
+    float: none;
+    text-align: center;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+#showcase .container .showcase-content .text-primary{
+    color:blue;
+}
+.btn{
+    background: white;
+    padding: 20px 20px;
+    margin: auto;
+    color: black;
+    box-sizing: border-box;
+    font-weight: bold;
+    border: none;
+}
+#p-mobil{
+    margin: 10px 0  10px 0;
+    color: yellow;
+
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+    padding-right: 20px;
+}
+.bg-primary{
+    background-color: orange;}
+
+.box i{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 100%
+}
+.box{
+    float: left;
+    width: 33.3%;
+    padding-bottom: 10px;
+}
+.box bg-primary{
+    float: left;
+    width: 33.3%;
+    padding-bottom: 10px;
+    text-align:center ;
+}
+.odeslat{
+background: white;
+padding: 20px 30px;
+margin-left: 100px;
+margin-top: 30px;
+color: white;
+font-weight: bold;
+border: none;
+}
+.dotaznik{
+    color:orange;
+
+}
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+    padding: center
+}
+#homeinfo .info-img{
+    float: left;
+    width: 0%;
+    background: url("img/sdh_pumpa.jpg") no-repeat;
+    min-height: 0%

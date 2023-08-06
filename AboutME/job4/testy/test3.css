@@ -1,0 +1,23 @@
+#chat {
+    width: 300px;
+    margin: 50px auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .outgoing {
+    background-color: #DCF8C6;
+    float: right;
+  }
+  
+  .incoming {
+    background-color: #F4F4F4;
+    float: left;
+  }
