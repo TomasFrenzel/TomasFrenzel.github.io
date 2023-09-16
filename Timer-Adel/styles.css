@@ -22,7 +22,7 @@
     position: absolute;
     transform: translateY(-50%);
     color: white;
-    font-size: 40px;
+    font-size: 20px;
 }
 .content h1{
     font-size: 70px;
@@ -39,7 +39,9 @@
     font-size: 60px;
     margin-bottom: -14px;
 }
-
+.redcolor{
+    color: red;
+}
 /*Button*/
 
 .button {
@@ -64,3 +66,47 @@
     background-color: red;
     color: white;
  }
+
+ /*Photos*/
+ .containers {
+  position: relative;
+  width: 30%;
+
+
+  
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+
+  left: 0px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.containers:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+}
+.imgmale{
+    height: 250px;
+    padding: 10px;
+}
+.h2{
+    padding: 20px;
+}
